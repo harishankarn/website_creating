@@ -1,0 +1,97 @@
+
+                          CREATING AN OWN WEBSITE
+
+ First find yourself a Domain and a hosting serivce. 
+
+ A domain name is a string of text that maps to an alphanumeric 
+ IPaddress, used to access a website from client software.
+ 
+ Eg: Domain name for my website is harishankarn.in
+
+ A hosting serivce helps use publish the website we created by
+ saving it in there server. 
+ 
+ The domain provider will redirect the user to the hosting server since the 
+ domain provider only holds the domain name and not the contents of the
+ website which is contained in the hosting server
+
+ Some well knowing hosting services and Domain providers are :
+ 
+ 1. Godaddy - generally faster but more expensive
+ 2. Servage - less expensive and can host unlimited hosting servers but slow
+ 
+ [Important Note : both are paid services]
+ 
+ ----------------------------------------------------------------------------
+ 
+ This time we will use FTP "file transfer protocol" for the demonstartion
+ 
+ We will use goddaddy to find a domain name and servage are our hosting 
+ service.
+ 
+ Step 1 :
+ Find your desired hosting name from goddady and continue with there process 
+ to get yourself that domain name
+ 
+ Step 2 :
+ Then go to servage then in websites, add you website
+ 
+ Step 3 :
+ once the website is added for to files and FTP. Here you will be able to see 
+ your hostname.
+ 
+ Step 4 :
+ Click on ADD and type your usr/pass. You will see your user in the list
+ 
+ Step 5 :
+ Then click on edit. You will see a lost of folder made default by your
+ hosting service provider. 
+ 
+ Now you can create your website code and just add to the public html folder
+ 
+ If you already have your code ready you can just move the code to the public 
+ html folder already present in the servage listing.
+ 
+ Step 6 :
+ To move content you can either use terminal or a gui(filezilla)
+
+ ---------------------------------------------------------------------------- 
+ 
+ (Terminal)
+ Step 7 :
+ 
+ Type : ftp [hostname]
+ It will prompt for username and password.
+ You can use "help" to learn the commands. Few basic ommands are -
+ 
+    1. ls - list
+    2. lcd - current location of local machine (Can also be used to navigate)
+    3. delete - to delete file in remote server
+    4. pwd - current location in remote machine
+    5. cd - navigate in remote macine
+    6. put - to copy one file
+    
+ Step 8:
+ Use 'lcd' to navigate in local machine to the dir and use 'ls' to navigate
+ in the remote machine. Once in the correct folders use 'put [filename]'. 
+ This will copy the will to your hosting server
+ 
+ ----------------------------------------------------------------------------
+ 
+ GUI alternative to manage folder in hosting service : Filezilla
+ 
+ To install : sudo apt install Filezilla
+ 
+ ----------------------------------------------------------------------------
+ 
+ (Filezilla)
+ Step 7 :
+ after opening filezilla type you host name, user name and the password you 
+ set for that username. For port we can use the standard servage port of "21" 
+ then quickconnect.
+ 
+ Step 8 :
+ Now navigate to folder in local site(left) and remote site(right) and drag 
+ and drop from local to remote site and your files should copy
+ 
+ ----------------------------------------------------------------------------
